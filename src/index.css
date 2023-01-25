@@ -1,9 +1,20 @@
 .App {
     font-family: cursive;
     color:rgb(69, 69, 56);
+    background-color: aqua;
 }
 
 .Table {
     background-color: aqua;
     font-family:Impact;
+}
+
+button {
+    background-color: black;
+    color:red;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: cursive;
 }
