@@ -39,7 +39,7 @@ render() {
                 id = 'name'
                 value = {name}
                 onChange = {this.handleChange} />
-            <label htmlFor = 'job'>Job</label>
+            <label for = 'job'>Job</label>
             <input 
                 type = 'text'
                 name = 'job'

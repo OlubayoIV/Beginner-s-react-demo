@@ -7,6 +7,7 @@ const TableHeader = () => {
             <tr>
                 <th>Name</th>
                 <th>Roles</th>
+                <th>Delete</th>
             </tr>
         </thead>
     )
@@ -22,22 +23,21 @@ const TableBody = (props) => {
                     <button onClick={() => props.removeCharacter(index)}>Delete</button>
                 </td>
             </tr>
-        )
-    })
+        );
+    });
 
     return (
         <tbody>{rows}</tbody>   
     )
 }
 const Table = (props) => {
-    const { charactersData, removeCharacter } = props
-
+    const { charactersData, removeCharacter } = props;
         return (
             <table>
                 <TableHeader />
                 <TableBody charactersData = {charactersData} removeCharacter = {removeCharacter} />
             </table>
-        )
+        );
     }
 
 export default Table

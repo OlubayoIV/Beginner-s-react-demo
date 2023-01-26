@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Table from './Table'
-import './index.css'
 import Form from './Form'
 
 class App extends Component {
@@ -29,7 +28,7 @@ class App extends Component {
             <div className='container'>
                 <Table charactersData={characters} removeCharacter={this.removeCharacter} />
                 <Form />
-                
+
                 <Form handleSubmit = {this.handleSubmit} />
             </div>
         );

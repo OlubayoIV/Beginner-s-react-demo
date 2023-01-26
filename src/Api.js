@@ -26,7 +26,8 @@ render() {
         console.log(entry);
         return <li key = {index}>{entry}</li>
     })
-    return <ul>{result}</ul>
+    return <div className='container'><ul>{result}</ul>
+    </div>
 }
 }
 
