@@ -1,18 +1,11 @@
-
-.App {
-    font-family: cursive;
-    color:rgb(69, 69, 56);
-    background-color: aqua;
-}
-
-.Table {
-    background-color: aqua;
-    font-family:Impact;
-}
-
 button {
     background-color: black;
-    color:red;
+    color:#ffffff;
+    border-radius: 10px;
+    border: 1px solid red;
+    font-weight: 600;
+    font-family: cursive;
+    margin: 0 0 .5rem 0;
 }
 
 body {
@@ -21,43 +14,19 @@ body {
     margin: 0;
     font-size: 1rem;
     color: black;
-}
-
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;
 }
-
-p, ol, ul, dl, table {
-    margin: 0 0 1.5rem 0;
-}
-
-ul, li, ul {
-    margin-bottom: 0;
-}
-
-ol, li, ol {
-    margin-bottom: 0;
-}
-
-/* table */
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     max-width: 100%;
-}
-
-thead th {
-    border-bottom: 2px solid gray;
+    margin: 0 0 1.5rem 0;
 }
 
 th {
+    border-bottom: 2px solid gray;
     text-align: left;
     padding: .5rem;
-}
-
-textarea {
-    overflow: auto;
-    height: auto;
 }
