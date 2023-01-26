@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Table from './Table'
 import './index.css'
+import Form from './Form'
 
 class App extends Component {
     removeCharacter = (index) => {
@@ -13,40 +14,17 @@ class App extends Component {
     }
 
     state = {
-        characters: [
-            {
-                name: 'Ayo',
-                job: 'Software Engineer',
-            },
-            {
-                name: 'Bridget',
-                job: 'Nurse',
-            },
-            {
-                name: 'Vad',
-                job: 'Vetenary Doctor',
-            },
-            {
-                name: 'Cynthia',
-                job: 'Nurse',
-            },
-            {
-                name: 'Mardochee',
-                job: 'Pilot',
-            },
-            {
-                name: 'Peace',
-                job: 'Laboratory Scientist',
-            },
-        ],
-        
+        characters: [],
+
     }
+
     render() {
         const {characters} = this.state
 
         return (
             <div className='container'>
                 <Table charactersData={characters} removeCharacter={this.removeCharacter} />
+                <Form />
             </div>
         )
     }
