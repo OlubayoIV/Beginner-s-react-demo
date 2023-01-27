@@ -5,32 +5,32 @@ import Form from './Form'
 
 class App extends Component {
     removeCharacter = (index) => {
-        const {characters} = this.state
+        const {character} = this.state
         this.setState({
-            characters: characters.filter((character, i) => {
+            character: character.filter((character, i) => {
                 return i !== index
             }),
         })
     }
 
     state = {
-        characters: [],
+        character: [],
 
     }
 
     handleSubmit = (character) => {
-        this.setState({ characters: [...this.state.characters, character] })
+        this.setState({ character: [...this.state.character, character] })
     }
 
     render() {
-        const {characters} = this.state;
+        const {character} = this.state;
 
         return (
             <div className='container'>
                 <h1>React Tutorial</h1>
                 <p>Add a character with a name and a job to the table.</p>
                 <Table 
-                    charactersData={characters}
+                    characterData={character}
                     removeCharacter={this.removeCharacter}                       
                 />
                 <h3>A New</h3>

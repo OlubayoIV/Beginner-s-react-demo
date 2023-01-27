@@ -14,7 +14,7 @@ const TableHeader = () => {
 }
 
 const TableBody = (props) => {
-    const rows = props.charactersData.map((row, index) => {
+    const rows = props.characterData.map((row, index) => {
         return (
             <tr key = {index}>
                 <td>{row.name}</td>
@@ -31,11 +31,11 @@ const TableBody = (props) => {
     )
 }
 const Table = (props) => {
-    const { charactersData, removeCharacter } = props;
+    const { characterData, removeCharacter } = props;
         return (
             <table>
                 <TableHeader />
-                <TableBody charactersData = {charactersData} removeCharacter = {removeCharacter} />
+                <TableBody characterData = {characterData} removeCharacter = {removeCharacter} />
             </table>
         );
     }
